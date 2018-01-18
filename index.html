@@ -11,14 +11,12 @@
   <link href="css/button.css" rel="stylesheet" />
 
   <link href="css/index.min.css" rel="stylesheet" />
-  <style>
-
-  </style>
+  
   <!--[if lt IE 9]>
     <script src="js/html5shiv.min.js"></script>
     <![endif]-->
-  <script src="js/jquery.min.js"></script>
-  <script src="js/index.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/index.min.js"></script>
 </head>
 
 <body>
@@ -63,20 +61,22 @@
   </div>
   <!-- 首页 -->
   <section class="video">
-    <div class="swiper-container">
+
+    <div class="swiper-container" >
       <div class="swiper-wrapper">
 
 
 
-
-        <div class="swiper-slide nth1">
+        <div class="swiper-slide nth1" style="background: url(./images/bg3.jpg) no-repeat 46% 10%/cover;">
           <div class="box">
             <div class="left"></div>
             <div class="right">
               <span>年专注教育垂直领域</span>
               <i></i>
-              <p>
-                 我们展望的是未来，专注的是技术和解决方案
+              <p style="font-size: 18px;color:#fff">
+                 我们展望的是未来，
+                <br />专注的是技术和解决方案
+              </p>
                 <!-- 始于 2008 - 2017 展望未来 -->
                 <!-- <br />专注于设计体验，专业于解决方案</p> -->
             </div>
@@ -86,30 +86,30 @@
 
 
 
-        <div class="swiper-slide nth2">
+        <div class="swiper-slide nth2" style="background: url(./images/bg3.jpg) no-repeat 46% 10%/cover">
           <div class="box">
             <span>钟情于落地</span>
             <i></i>
-            <p>我们想，再创造一个新航向</p>
+            <p style="font-size: 18px;color:#fff">我们想，再创造一个新航向</p>
           </div>
         </div>
-        <div class="swiper-slide nth3">
-          <div class="box">
+        <div class="swiper-slide nth3" style="background: url(./images/bg3.jpg) no-repeat 46% 10%/cover">
+          <div class="box" >
             <div class="top">技术派，论研发</div>
             <div class="mid"></div>
-            <div class="bottom">
+            <div class="bottom" style="font-size: 18px;color:#fff">
                我们说，业界缺的就是最棒的技术开发者，
               <!-- 我说，业界没有最好的技术，只有最棒的技术开发者 -->
               <br />私人订制服务于您和您的团队</div>
           </div>
         </div>
-        <div class="swiper-slide nth4">
+        <div class="swiper-slide nth4" style="background: url(./images/bg3.jpg) no-repeat 46% 10%/cover">
           <div class="box">
             <div class="top">
               <span>先入为主，布局未来</span>
               <i></i>
             </div>
-            <div class="bottom">全面布局
+            <div class="bottom" style="font-size: 18px;color:#fff">全面布局
               <u>PC</u>端与
               <u>移动</u>端
               <br />抢占头等商机
@@ -149,6 +149,7 @@
       <div class="guide"></div>
       <a class="movedown"></a>
     </div>
+   
   </section>
 
   <!-- 项目介绍 -->
@@ -233,19 +234,19 @@
 
           <div class="swiper-slide">
             <h1>Jonson</h1>
-            <div style="line-height:220%">星光教育基金会理事会成员、EduChain中国社区总负责人，中国资深互联网投资者，曾全程参与辅助多家上市公司的IPO项目，2013年开始接触区块链，是区块链领域先行者。</div>
+            <div style="line-height:220%;text-indent:2em">星光教育基金会理事会成员、EduChain中国社区总负责人，中国资深互联网投资者，曾全程参与辅助多家上市公司的IPO项目，2013年开始接触区块链，是区块链领域先行者。</div>
 
 
           </div>
 
           <div class="swiper-slide">
             <h1>Shine Jing</h1>
-            <div style="line-height:220%">EduChain中国社区技术总监，拥有十年C++开发经验，高级开发工程师，有独立负责华为外包项目的经验。总负责EduChain中国社区的技术维护工作。</div>
+            <div style="line-height:220%;text-indent:2em">EduChain中国社区技术总监，拥有十年C++开发经验，高级开发工程师，有独立负责华为外包项目的经验。总负责EduChain中国社区的技术维护工作。</div>
           </div>
 
           <div class="swiper-slide">
             <h1>Shen</h1>
-            <div style="line-height:220%">EduChain中国社区运营推广总监，数学博士学位；EduChain高级讲师，有11年的学校管理经验，资深区块链技术研究员。</div>
+            <div style="line-height:220%;text-indent:2em">EduChain中国社区运营推广总监，数学博士学位；EduChain高级讲师，有11年的学校管理经验，资深区块链技术研究员。</div>
           </div>
 
         </div>
@@ -258,12 +259,25 @@
     .aboutus .items {
       height: 460px;
       width: 500px!important;
+     
+    }
+    @media(min-width:1000px){
+      .aboutus .items {
+        height: 460px;
+        /*width: 500px!important;*/
+        width: 800px!important;
+      }  
+      .aboutus.active div.items{
+        
+        transform: translate(-50%,0);
+     
+      }
     }
   </style>
   <section class="aboutus">
     <ul class="menu">
       <li>思想</li>
-      <li>关于</li>
+      <li>应用</li>
       <li>规划</li>
     </ul>
     <div class="swiper-container items">
@@ -276,27 +290,28 @@
           <u>下一秒，让你看，我们到底有多强</u>
         </div>
         <div class="swiper-slide nth2">
-          <strong>关于EduChain的孵化项目</strong>
-          <p>（1）区块链蓝海 EduChain教育链是由EduChain全球基金会发起，以推动区块链技术全面发展为使命，致力于区块链全球化的普及，让区块链技术更好的为我们的日常生活做好服务，提高我们的生活品质。目前，教育链中国区应用场景为区块链蓝海，打造中国区区块链教育培训第一平台，培养更多的区块链专业人才，以推动区块链在中国区的发展。
+          <strong>应用情景</strong>
+            <ul>
+            <li>2017年8月，在教育链中国社区运营团队的帮助下，区块链蓝海（蓝海学院）正式成立，根据EduChain 长期目标和1.0阶段定位，以普及区块链知识和帮助传统企业进行区块链技术商用落地为使命。打造中国区块链教育第一平台。</li>
+            <li>2018年1月，区块链蓝海APP正式上线，旨在打造区块链技术领域的科普先锋，里面可以查询所有区块链知识，收录了所有主流数字资产、交易所的信息。还有最新的区块链资讯。还有互动问答社区，可以付一点EDU进行付费提问，别人回答如果满意，他将得到这部分EDU奖励。同时，教育链团队空投20万代币给公测用户，作为他们对APP的测试和提议的奖励。</li>
+            <li>2018年2月，蓝海学院将开设第一批总裁班，将由新加坡国立大学教授，北京邮电大学教授等进行授课，课程将使用EDU作为唯一支付方式。同时学习并应用区块链技术进行教育领域创业的学员，教育链中国社区运营团队将提供EDU资产进行激励。</li>
+          </ul>
+          <!-- <p>（1）区块链蓝海 EduChain教育链是由EduChain全球基金会发起，以推动区块链技术全面发展为使命，致力于区块链全球化的普及，让区块链技术更好的为我们的日常生活做好服务，提高我们的生活品质。目前，教育链中国区应用场景为区块链蓝海，打造中国区区块链教育培训第一平台，培养更多的区块链专业人才，以推动区块链在中国区的发展。
             <br>（2）以太创客空间
             <br> 以太创客空间，致力打造全球最大的STEAM课程创新、交流与互动的自治社区及STEAM教育模式推动平台。 基于区块链技术的去中心化管理社区旨在集合全球最具创意、推动STEAM教育的发展，社区平台深入挖掘STEAM教育模式，建立基于情景式、过程式的STEAM教学资源，竖立STEAM教育标准，重学习方法及教学模式，鼓励创新和共享，激发人们探索未知、有趣事物的欲望，引导人们求知的方法。以太创客社区的参与者努力将自己的创意变为现实，并实现价值内容共享传递。
-          </p>
+          </p> -->
+
         </div>
         <div class="swiper-slide nth3">
           <strong>放下荣誉，放眼未来</strong>
           <ul>
-
-            <li>2017-4 项目组成立，组建技术团队，运营团队，初步形成白皮书</li>
-            <li>2017-4.15~6.30 完成教育行业市场及行业调研</li>
-            <li>2017-6 完成EduChain技术框架设计</li>
-            <li>2017-7 构建第一个待孵化项目—以太创客空间</li>
-            <li>2017-7 启动钱包、Edu内测、区块链蓝海及以太创客空间项目框架设计</li>
-            <li>2017-7~8 私募完成</li>
-            <li>2017-8 区块链基础搭建完成</li>
-            <li>2017-9 区块链测试代币发布完成</li>
-            <li>2017-10~12 EduChain全球基金会成立(海外团队正式成立)，区块链蓝海学院创建、以太创客空间平台系统完成</li>
-            <li>2018 完善落地应用。继续对EduChain完善相关应用进行研发，促进以太创客空间品牌发展；加大区块链蓝海宣传力度，打造区块链领域教育培训第一品牌。</li>
-            <li>2019 基于EduChain孵化其他教育项目</li>
+            <li>2016年7月，基金会发起成立EduChain教育链，旨在推动极其火热的区块链技术的研究，并且进行社区化的运作，帮助社区成员进行区块链技术的普及和商用探索。</li>
+            <li>2017年2月，EduChain教育链全球社区负责人杨耀新先生开始寻找中国地区的合作伙伴，希望用本土化运营的方式来运作教育链中国社区。</li>
+            <li>2017年3月中旬，江登先生与杨耀新先生进行洽谈，经过48天，11轮的跨国线上谈判，最终一致同意双方进行合作。</li>
+            <li>2017年4月5日，江登先生携团队赴新加坡，与星光教育基金会理事长杨进文先生一起，在双方法务团队仔细研究中国和新加坡相关法律法规后，签署了全面战略合作伙伴协议。
+江登先生成为星光教育基金会理事会成员，负责EduChain教育链的中国社区全权运营
+由星光教育基金会及教育链全球社区提供技术和资金支持，为教育链中国社区的运营提供一切助力</li>
+<li>2017年6月，在江登先生及团队的努力和基金会的帮助下，EduChain教育链中国社区运营团队搭建完毕，运营团队还制定了中长期社区发展规划。</li>
 
           </ul>
         </div>
@@ -318,13 +333,13 @@
     </table>
   </section>
 
-  <section class="contact">
+  <section class="contact" id="partner">
     <div class="box">
       <h1 align="center" style="margin-bottom:50px">合作伙伴</h1>
       <div class="above clearfix">
         <div style="margin:10px" class="wechat">
-          <a href="https://www.sosobtc.com/" ref="nofollow" target="_blank">
-            <img width="170px" height="54px" src="images/linksosobtc.jpg" alt="ＳＯＳＯＢＴＣ" />
+          <a href="https://www.oex.com/" ref="nofollow" target="_blank">
+            <img width="170px" height="54px" src="images/oex.png" alt="ＯEX" />
           </a>
         </div>
         <div style="margin:10px" class="wechat">
@@ -428,27 +443,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <style type="text/css">
   <!-- .mydiv {
     text-align: center;
@@ -470,6 +464,7 @@
   -->
 </style>
 <script language="javascript" type="text/javascript">
+
 
   function closeDiv() {
     document.getElementById('popDiv').style.display = 'none';
